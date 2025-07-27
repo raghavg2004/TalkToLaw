@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalConnect - Lawyer Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>LegalConnect</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="auth/login.html">Login</a></li>
+                    <li><a href="auth/register.html" class="btn btn-primary">Sign Up</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Find the Right Legal Help, Anytime</h1>
+                    <p>Connect with verified lawyers instantly for your legal needs or grow your practice by reaching new clients.</p>
+                    <div class="cta-buttons">
+                        <a href="auth/register.html?type=client" class="btn btn-primary">I Need a Lawyer</a>
+                        <a href="auth/register.html?type=lawyer" class="btn btn-secondary">I'm a Lawyer</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- 3D model placeholder -->
+                    <div id="lawyer-3d-model"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose LegalConnect</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Find the Right Lawyer</h3>
+                        <p>Browse profiles, read reviews, and connect with lawyers specializing in your legal issue.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Secure Messaging</h3>
+                        <p>Chat directly with your lawyer in a secure, encrypted environment.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3>Transparent Pricing</h3>
+                        <p>Know the costs upfront with clear pricing for legal services.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verified Professionals</h3>
+                        <p>All lawyers are verified and licensed to practice in their jurisdiction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Post Your Legal Need</h3>
+                        <p>Describe your legal issue in simple terms.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Receive Lawyer Matches</h3>
+                        <p>Get matched with qualified lawyers in your area.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Compare & Connect</h3>
+                        <p>Review profiles, fees, and ratings before choosing.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Get Legal Help</h3>
+                        <p>Work with your lawyer to resolve your issue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Simple Pricing for Lawyers</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">₹999<span>/month</span></div>
+                        <ul>
+                            <li>5 client connections</li>
+                            <li>Profile listing</li>
+                            <li>Basic analytics</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Choose Plan</a>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="badge">Popular</div>
+                        <h3>Professional</h3>
+                        <div class="price">₹2,499<span>/month</span></div>
+                        <ul>
+                            <li>20 client connections</li>
+                            <li>Priority listing</li>
+                            <li>Advanced analytics</li>
+                            <li>Phone support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">₹4,999<span>/month</span></div>
+                        <ul>
+                            <li>Unlimited connections</li>
+                            <li>Featured listing</li>
+                            <li>Premium support</li>
+                            <li>Marketing tools</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LegalConnect</h3>
+                    <p>Connecting clients with qualified legal professionals since 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@legalconnect.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LegalConnect. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Vanta.js background
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3a86ff,
+            backgroundColor: 0x0,
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+
+        // Load 3D model
+        function init3DModel() {
+            const container = document.getElementById('lawyer-3d-model');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ alpha: true });
+            
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            container.appendChild(renderer.domElement);
+            
+            // Add lights
+            const light = new THREE.AmbientLight(0xffffff, 0.5);
+            scene.add(light);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+            directionalLight.position.set(0, 1, 1);
+            scene.add(directionalLight);
+            
+            // Add a simple 3D model (placeholder)
+            const geometry = new THREE.BoxGeometry(2, 3, 2);
+            const material = new THREE.MeshPhongMaterial({ 
+                color: 0x3a86ff,
+                transparent: true,
+                opacity: 0.8
+            });
+            const cube = new THREE.Mesh(geometry, material);
+            scene.add(cube);
+            
+            camera.position.z = 5;
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                cube.rotation.x += 0.01;
+                cube.rotation.y += 0.01;
+                renderer.render(scene, camera);
+            }
+            
+            animate();
+            
+            window.addEventListener('resize', () => {
+                camera.aspect = container.clientWidth / container.clientHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(container.clientWidth, container.clientHeight);
+            });
+        }
+        
+        window.addEventListener('load', init3DModel);
+    </script>
+</body>
+</html>
